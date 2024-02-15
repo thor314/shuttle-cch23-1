@@ -1,0 +1,24 @@
+[package]
+authors    =["Thor Kampefner <thorck@pm.me>"]
+description="""challenges for shuttle christmas code hunt 2023"""
+edition    ="2021"
+name       ="shuttle-cch23-1"
+version    ="0.1.0"
+
+[dependencies]
+anyhow   ="1.0"
+# cute = "0.3.0"
+tracing = "0.1"
+tracing-subscriber={ version="0.3", features=["env-filter", "fmt"] }
+tokio = { version = "1", features = ["full"] }
+futures = "0.3" 
+thiserror="1.0"
+env_logger = "0.11"
+dotenvy = "0.15"
+
+axum = "0.7.3"
+shuttle-axum = "0.39.0"
+shuttle-runtime = { version = "0.39", default-features = false }
+
+[dev-dependencies]
+rstest    ="0.18"         # testing convenience proc-macros
