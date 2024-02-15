@@ -19,6 +19,8 @@ dotenvy = "0.15"
 axum = "0.7.3"
 shuttle-axum = "0.39.0"
 shuttle-runtime = { version = "0.39", default-features = false }
+serde = { version = "1.0.196", features = ["derive"] }
+shuttle-secrets = "0.39.0"
 
 [dev-dependencies]
 rstest    ="0.18"         # testing convenience proc-macros
